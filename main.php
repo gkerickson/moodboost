@@ -8,14 +8,19 @@
 		<!--script language="JavaScript" src="MB.js"></script-->
 	</head>
 	<body>
-	<div>
-		
-	</div>
-	<div>
-	
-	</div>
-	<div>
+		<div>
+				<div>
+					<div class="top-main">
+						<button class="btn btn-default" type="submit">Do you need to talk?</button>
+					</div>
+						
+					<div class="top-main">
 
-	</div>
+					</div>
+				</div>
+				<div id="bottom-main">
+
+				</div>
+		</div>
 	</body>
 </html>

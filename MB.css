@@ -28,3 +28,23 @@ button{
 	width: 30vw;
 	height:30vw;
 }
+
+.top-main {
+	width:50%;
+	height:50%;
+	padding:0px;
+	margin:0px;
+}
+
+#bottom-main{
+	width:100%;
+	height:50%;
+	padding:0px;
+	margin:0px;
+}
+
+#talk-button{
+	
+	
+	
+}
