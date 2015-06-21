@@ -1,8 +1,16 @@
 body {
-  background-color: #d0e4fe; }
+  background-color: #5328BF; }
 
 h1 {
-  text-align: center; }
+  text-align: center; 
+  color: #FFFFFF;
+}
 
-btn {
-  text-align: center; }
+div {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.btn {
+  style: block;
+  text-align: center;
+  width: 33.33333333333333%; }
