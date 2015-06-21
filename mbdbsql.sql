@@ -66,37 +66,42 @@ FOREIGN KEY (name) REFERENCES Mood(name)
 
 CREATE TABLE Tags
 (
-tag BIGINT NOT NULL AUTO_INCREMENT,
+tag int NOT NULL AUTO_INCREMENT,
+mood varchar(255),
+FOREIGN KEY (mood) REFERENCES Mood(name),
 PRIMARY KEY (tag)
 );
 
 
 CREATE TABLE Chats
 (
-taga BIGINT,
-tagb BIGINT,
+taga int,
+tagb int,
 PRIMARY KEY (taga,tagb)
 );
 
 
 CREATE TABLE Msgs
 (
-pfrm BIGINT,
-pto BIGINT,
+pfrm int,
+pto int,
 msg varchar(255),
 tme DATETIME,
-PRIMARY KEY (pfrm,pto,msg,tme),
-FOREIGN KEY (pfrm) REFERENCES Tags(tag),
-FOREIGN KEY (pto) REFERENCES Tags(tag)
+PRIMARY KEY (pfrm,pto,msg,tme)
 );
 
 
-INSERT INTO Atom VALUES ("happy");
-INSERT INTO Atom VALUES ("sad");
-INSERT INTO Atom VALUES ("angry");
-INSERT INTO Atom VALUES ("disgusted");
-INSERT INTO Atom VALUES ("afraid");
-INSERT INTO Atom VALUES ("surprised");
+INSERT INTO Atom VALUES ("Happy");
+INSERT INTO Atom VALUES ("Sad");
+INSERT INTO Atom VALUES ("Angry");
+INSERT INTO Atom VALUES ("Disgusted");
+INSERT INTO Atom VALUES ("Afraid");
+INSERT INTO Atom VALUES ("Surprised");
+
+INSERT INTO Content VALUES ("https://upload.wikimedia.org/wikipedia/commons/8/88/Quetzalcoatl_telleriano.jpg",50.0);
+INSERT INTO Content VALUES ("http://www.latinamericanstudies.org/aztecs/huitzilopochtli.jpg",50.0);
+INSERT INTO Content VALUES ("https://godsilove.files.wordpress.com/2012/07/tezcatlipoca.png",50.0);
+INSERT INTO Content VALUES ("https://s-media-cache-ak0.pinimg.com/736x/50/c2/88/50c288394c67b81697bf8847431183af.jpg",50.0);
 
 INSERT INTO Mood VALUES ("happy","http://www.thelawofattraction.org/wp-content/uploads/2013/06/happy.jpg");
 INSERT INTO Mood VALUES ("sad","http://ghcorps.org/wp-content/uploads//2013/01/Sad-Cat.jpg");
