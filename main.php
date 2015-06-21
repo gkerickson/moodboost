@@ -30,7 +30,14 @@
 					<h1>Watch Some Videos While You Wait</h1>
 
 				</div>
+
 			</div>
+
+
+				<div id="bottom-main">
+				<h3><a href="http://moodboost.dev/moodboost/MB.php">Home</a><h3>
+			</div>	
+			
 
 			<div id="bottom-main">
 				<textarea rows="16" cols="100" id="vieware" disabled="true">
