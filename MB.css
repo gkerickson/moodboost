@@ -9,11 +9,6 @@ div{
 	border:0	;
 }
 
-.btn {
-  style: block;
-  text-align: center;
-}
-
 .banner	{
 	position:fixed;
 	top:0px;
@@ -43,6 +38,8 @@ div{
 	width: 28vw;
 	height:28vw;
 	margin:1vw;
+	style: block;
+	text-align: center;
 }
 
 #top-left .sqr1{
