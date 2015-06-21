@@ -8,6 +8,7 @@
 		<!--script language="JavaScript" src="MB.js"></script-->
 	</head>
 	<body>
+<<<<<<< HEAD
 		<div>
 			<div id="top-main">
 				<div id="top-left">
@@ -22,5 +23,16 @@
 				</div>
 			</div>
 		</div>
+=======
+	<div>
+		
+	</div>
+	<div>
+	
+	</div>
+	<div>
+
+	</div>
+>>>>>>> baee8a790af6e40b667eae6d0bf6afd7eb939c3e
 	</body>
 </html>
