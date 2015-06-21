@@ -8,7 +8,12 @@
 		<!--script language="JavaScript" src="MB.js"></script-->
 	</head>
 	<body>
-
+        <?php require 'db.php';?>
+        
+        <?php
+        $mood = $_GET["mood"];
+        $pdo->query("INSERT Data VALUES ($mood,"+time()+");");
+        ?>
 		<div>
 			<div id="top-main">
 				<div id="top-left">

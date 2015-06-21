@@ -4,15 +4,6 @@ CREATE DATABASE MBDB;
 
 USE MBDB;
 
-CREATE TABLE User
-(
-uname varchar(255),
-pwd varchar(255),
-email varchar(255),
-addr varchar(255),
-fb varchar(255),
-PRIMARY KEY (uname)
-);
 
 CREATE TABLE Mood
 (
@@ -21,15 +12,13 @@ img varchar(255),
 PRIMARY KEY (name)
 );
 
-CREATE TABLE U_M
+CREATE TABLE Data
 (
+did int NOT NULL AUTO_INCREMENT,
 name varchar(255),
-uname varchar(255),
-lat DOUBLE(6,6),
-lot DOUBLE(6,6),
-PRIMARY KEY (name,uname),
-FOREIGN KEY (name) REFERENCES Mood(name),
-FOREIGN KEY (uname) REFERENCES User(uname)
+tme DATETIME,
+PRIMARY KEY (did),
+FOREIGN KEY (name) REFERENCES Mood(name)
 );
 
 CREATE TABLE Atom
