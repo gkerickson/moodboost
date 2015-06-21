@@ -1,5 +1,6 @@
 body {
-  background-color: #5328BF;
+  background-color: #5328BF;background-image:url(http://bundledeal.net/wp-content/uploads/2014/04/color19.png);
+  background-size: contain;background-origin:border-box
 }
 
 button{
