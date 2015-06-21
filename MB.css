@@ -14,9 +14,9 @@ div{
 }
 
 .sqr1{
-	width: 25vw;
-	height:25vw;
-	margin:2.5vw;
+	width: 28vw;
+	height:28vw;
+	margin:1vw;
 }
 
 .sqr1:hover{
@@ -25,7 +25,7 @@ div{
 
 #front-page{
 	background-color: #5328BF;
-	background-image:url((http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
+	background-image:url(http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
 	background-size: contain;
 	background-origin:border-box;
 }
