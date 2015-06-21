@@ -1,5 +1,6 @@
 body {
-  background-color: #5328BF; }
+  background-color: #5328BF;
+}
 
 h1 {
   text-align: center; 
@@ -7,10 +8,22 @@ h1 {
 }
 
 div {
-  margin-left: 5%;
-  margin-right: 5%; }
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding: 0;
+}
 
 .btn {
   style: block;
   text-align: center;
-  width: 33.33333333333333%; }
+}
+
+button{
+	padding:0;
+	margin:0;
+}
+
+.square{
+	width: 30vw;
+	height:30vw;
+}

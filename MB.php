@@ -9,25 +9,17 @@
 	</head>
 	<body>
 	   <?php require 'db.php';?>
-		<!--select id="mdlst"-->
-			<!--?php
-//                foreach ($pdo->query("SELECT name FROM Mood") as $mood) {
-//                    echo("<option value=\"");
-//                    echo($mood[0]);
-//                    echo("\">");
-//                    echo($mood[0]);
-//                    echo("</option>");
-//                }
-			?-->
-		<!--/select-->
-		<h1> How are you feeling today?</h1>
 		<div>
 			<?php
-				$temp = $pdo->query("SELECT name FROM Mood");
+				$temp = $pdo->query("SELECT name,img FROM Mood");
 				$emotions = $temp->fetchAll();
 				$length = count($emotions);
 				for ($x = 0; $x < $length; $x++){
-					echo("<button class=\"btn btn-default square\" type=\"submit\">");
+					echo("<button style=\"background: url(");
+					echo($emotions[$x][1]);
+					echo(") no-repeat; background-size:cover; font: 55pt san-sarif; color: #4D0000;\" id=\"");
+					echo($emotions[$x][0]);
+					echo("\" class=\"btn btn-default square\" type=\"submit\">");
 					echo($emotions[$x][0]);
 					echo("</button>");
 				}
