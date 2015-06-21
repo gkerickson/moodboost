@@ -20,12 +20,15 @@
 					<button class="btn btn-default sqr1" type="submit">WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?</button>
 				</div>
 				<div id="top-right">
-					<p>test</p>
-				</div>
-				<div id="bottom-main">
+					<h1>Watch Some Videos While You Wait</h1>					
 
 				</div>
+			</div>	
+			
+			<div id="bottom-main">
+
 			</div>
+			
 		</div>
 	</body>
 </html>
