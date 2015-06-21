@@ -11,6 +11,7 @@ div {
   margin-left: 4vw;
   margin-right: 4vw;
   padding: 0;
+  border:5px solid black;
 }
 
 .btn {
