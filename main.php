@@ -11,19 +11,17 @@
         <?php require 'db.php';?>
         
         <?php
-        $mood = $_GET["mood"];
-        $pdo->query("INSERT INTO Data (name,tme) VALUES ('$mood','".date("Y-m-d H:i:s")."');");
-        //echo("INSERT INTO Data (name,tme) VALUES ('");echo("$mood','"+time()+"');");
+	        $mood = $_GET["mood"];
+	        $pdo->query("INSERT INTO Data (name,tme) VALUES ('$mood','".date("Y-m-d H:i:s")."');");
         ?>
 		<div>
 			<div id="top-main">
 				<div id="top-left">
-					<button class="btn btn-default" type="submit">Do you need to talk?</button>
+					<button class="btn btn-default sqr1" type="submit">WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?</button>
 				</div>
 				<div id="top-right">
 					<p>test</p>
 				</div>
-			
 				<div id="bottom-main">
 
 				</div>

@@ -19,6 +19,14 @@ div{
 	margin:1vw;
 }
 
+#top-left .sqr1{
+	width:20vw;
+	height:20vw;
+	margin-left:15vw;
+	font-size: auto;
+	white-space: normal;
+}
+
 .sqr1:hover{
 	background-position:0 +50px;
 }
@@ -59,8 +67,4 @@ div{
   width: 90vw;
   margin-left: 4vw;
   margin-right: 4vw;
-}
-
-#talk-button{
-	
 }
