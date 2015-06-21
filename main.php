@@ -8,53 +8,51 @@
 		<script language="JavaScript" src="main.js"></script>
 	</head>
 	<body>
-		<?php
-        require 'db.php';
-		?>
-
-		<?php
-        $mood = $_GET["mood"];
-        $pdo -> query("INSERT INTO Data (name,tme) VALUES ('$mood','" . date("Y-m-d H:i:s") . "');");
-		?>
+        <?php require 'db.php';?>
+        
+        <?php
+	        $mood = $_GET["mood"];
+	        $pdo->query("INSERT INTO Data (name,tme) VALUES ('$mood','".date("Y-m-d H:i:s")."');");
+        ?>
 		<div>
 			<div id="top-main">
 				<div id="top-left">
-					<button class="btn btn-default sqr1" type="submit" id="initCht" display='block'>
-						WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?
-					</button>
-					<button class="btn btn-default sqr1" type="submit" id="endCht" display='none'>
-						...END CONVERSATION
-					</button>
+					<button class="btn btn-default speak-button" id="initCht" type="submit" display="block">WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?</button>
+					<button class="btn btn-default speak-button" id="endCht" type="submit" display="none">END CONVERSTION</button>
+				</div>
+				<div id="top-middle">
+					<h1>PROJECT MOOD BOOST</h1>
+					<a href="/M B.php">
+					<img src="https://openclipart.org/download/192852/thumbs-up-right.svg" id="main-img">
+					</a>
 				</div>
 				<div id="top-right">
-					<h1>Watch Some Videos While You Wait</h1>
-
+					<h1>For While You Wait</h1>
+					<?php
+						$temp = $pdo->query("SELECT link FROM Content");
+						echo("<ul>");
+						$content = $temp->fetchAll();
+						$max = 4;
+						if(count($content)<5){
+							$max = count($content);
+						}
+						for ($x=0; $x<$max; $x++){
+							echo("<li><a class=\"btn btn-default content-button\" target=\"_blank\" href=\"");
+							echo($content[$x][0]);
+							echo("\">HERES SOME STUFF FEEL BETTER!!!!</a></li>");
+						}
+						echo("</ul>");
+						?>
 				</div>
-
 			</div>
-
-
-				<div id="bottom-main">
-				<h3><a href="http://moodboost.dev/moodboost/MB.php">Home</a><h3>
-			</div>	
-			
-
 			<div id="bottom-main">
-				<textarea rows="16" cols="100" id="vieware" disabled="true">
-</textarea>				
-
-
+				<textarea rows="16" cols="100" id="vieware" disabled="true"></textarea>
 				<form onsubmit="smt(); return false;">
 					Enter messages here:
 					<input type="text" name="msgtxt" value="Hi!" id="txtare">
 				</form>
-
 				</br>
-				<!--button type="submit" id="smt">
-					Post
-				</button-->
 			</div>
-
 		</div>
 	</body>
 </html>
