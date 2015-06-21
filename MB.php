@@ -4,6 +4,7 @@
 		<title>Mood-Boost</title>
 		<link href="bootstrap-3.3.5-dist/css/bootstrap.css" type="test/css" rel="stylesheet">
 		<link href="MB.css" type="text/css" rel="stylesheet" >
+		<link href="css/hover.css" type="text/css" rel="stylesheet" >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script language="JavaScript" src="MB.js"></script>
 	</head>
@@ -19,7 +20,7 @@
 					echo($emotions[$x][1]);
 					echo(") no-repeat; background-size:cover; font: 55pt san-sarif; color: #4D0000;\" id=\"");
 					echo($emotions[$x][0]);
-					echo("\" class=\"btn btn-default sqr1\" type=\"submit\">");
+					echo("\" class=\"btn btn-default sqr1 hvr-grow\" type=\"submit\">");
 					echo($emotions[$x][0]);
 					echo("</button>");
 				}

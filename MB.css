@@ -18,8 +18,13 @@ div{
 }
 
 .sqr1{
-	width: 30vw;
-	height:30vw;
+	width: 25vw;
+	height:25vw;
+	margin:2.5vw;
+}
+
+.sqr1:hover{
+	background-position:0 +50px;
 }
 
 #front-page{
