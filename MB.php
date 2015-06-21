@@ -8,7 +8,6 @@
 	</head>
 
 	<body>
-<<<<<<< HEAD
 	   <?php require 'db.php'; ?>
 		<select id="mdlst">
 			<?php
@@ -23,7 +22,6 @@
                 
 			?>
 		</select>
-=======
 		<?php require 'db.php'; ?>
 		<select id="mdlst">
 			<?php
@@ -40,6 +38,5 @@
 				echo "<button class=\"btn btn-default\" type=\"submit\">$emotion</button>";
 			}
 		?>
->>>>>>> origin/master
 	</body>
 </html>
