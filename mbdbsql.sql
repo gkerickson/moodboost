@@ -99,12 +99,12 @@ INSERT INTO Atom VALUES ("Afraid");
 INSERT INTO Atom VALUES ("Surprised");
 
 INSERT INTO Content VALUES ("https://upload.wikimedia.org/wikipedia/commons/8/88/Quetzalcoatl_telleriano.jpg",0.0);
-INSERT INTO Content VALUES ("http://www.latinamericanstudies.org/aztecs/huitzilopochtli.jpg",0.0);
+INSERT INTO Content VALUES ("http://www.latinamericanstudies.org/aztecs/huitzilopochtli.jpg",0.2);
 INSERT INTO Content VALUES ("https://godsilove.files.wordpress.com/2012/07/tezcatlipoca.png",0.0);
 INSERT INTO Content VALUES ("https://s-media-cache-ak0.pinimg.com/736x/50/c2/88/50c288394c67b81697bf8847431183af.jpg",0.0);
-INSERT INTO Content VALUES ("https://www.youtube.com/watch?v=jZhQOvvV45w&list=PL88534134DDA83D46",0.0);
-INSERT INTO Content VALUES ("https://www.youtube.com/watch?v=y6Sxv-sUYtM",0.0);
-INSERT INTO Content VALUES ("https://www.youtube.com/watch?v=3GjF_hbufUg",0.0);
+INSERT INTO Content VALUES ("https://www.youtube.com/watch?v=jZhQOvvV45w&list=PL88534134DDA83D46",0.1);
+INSERT INTO Content VALUES ("https://www.youtube.com/watch?v=y6Sxv-sUYtM",0.3);
+INSERT INTO Content VALUES ("https://www.youtube.com/watch?v=3GjF_hbufUg",0.4);
 
 
 INSERT INTO Mood VALUES ("happy","http://www.thelawofattraction.org/wp-content/uploads/2013/06/happy.jpg");
