@@ -6,12 +6,20 @@ button{
 div{
 	padding:0;
 	margin:0;
-	border:0	;
+	border:0;
 }
 
 .btn {
   style: block;
-  text-align: center;
+  text-align: left;
+  text-indent: 30px;
+  text-transform: capitalize;
+  line-height : 27px;
+}
+.sqrl p{
+position:relative;
+top: 0px;
+
 }
 
 .banner	{
@@ -43,7 +51,9 @@ div{
 	width: 28vw;
 	height:28vw;
 	margin:1vw;
+	
 }
+
 #banner{
 	background-image:url(https://cottonbureau.com/img/products/241_gHUO_1200.jpg);
 	background-repeat:no-repeat;

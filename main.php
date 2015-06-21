@@ -24,6 +24,8 @@
 					<h1>Watch Some Videos While You Wait</h1>					
 
 				</div>
+				<div id="bottom-main">
+				<h3><a href="http://moodboost.dev/moodboost/MB.php">Home</a><h3>
 			</div>	
 			
 			<div id="bottom-main">
