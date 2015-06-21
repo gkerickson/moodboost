@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS MBDB;
+
 CREATE DATABASE MBDB;
 
 USE MBDB;
@@ -15,6 +17,7 @@ PRIMARY KEY (uname)
 CREATE TABLE Mood
 (
 name varchar(255),
+img varchar(255),
 PRIMARY KEY (name)
 );
 
@@ -86,5 +89,12 @@ INSERT INTO Atom VALUES ("disgusted");
 INSERT INTO Atom VALUES ("afraid");
 INSERT INTO Atom VALUES ("surprised");
 
-INSERT INTO Mood SELECT id AS name FROM Atom;
+INSERT INTO Mood VALUES ("happy","http://www.thelawofattraction.org/wp-content/uploads/2013/06/happy.jpg");
+INSERT INTO Mood VALUES ("sad","http://ghcorps.org/wp-content/uploads//2013/01/Sad-Cat.jpg");
+INSERT INTO Mood VALUES ("angry","https://selectresource.com/wp-content/uploads/2015/01/bigstock-portrait-of-young-angry-man-52068682.jpg");
+INSERT INTO Mood VALUES ("disgusted","https://readbodylanguage.files.wordpress.com/2011/05/cf2102-f4_default.gif");
+INSERT INTO Mood VALUES ("afraid","http://www.thedailymind.com/wp-content/uploads/2012/04/94_anxious.jpg");
+INSERT INTO Mood VALUES ("surprised","http://i.livescience.com/images/i/000/019/601/i02/surprised-guy.jpg?1314908791");
+
 INSERT INTO A_M SELECT Atom.id, Mood.name FROM Atom, Mood WHERE Mood.name = Atom.id;
+
