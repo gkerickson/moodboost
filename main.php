@@ -29,7 +29,7 @@
 				<div id="top-right">
 					<h1>For While You Wait</h1>
 					<?php
-						$temp = $pdo->query("SELECT link FROM Content");
+						$temp = $pdo->query("SELECT link FROM Content ORDER BY rating DESC");
 						echo("<ul>");
 						$content = $temp->fetchAll();
 						$max = 4;
