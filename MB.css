@@ -1,7 +1,3 @@
-body {
-
-}
-
 button{
 	padding:0;
 	margin:0;
@@ -29,7 +25,7 @@ div{
 
 #front-page{
 	background-color: #5328BF;
-	background-image:url(http://bundledeal.net/wp-content/uploads/2014/04/color19.png);
+	background-image:url((http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
 	background-size: contain;
 	background-origin:border-box;
 }
