@@ -22,9 +22,13 @@
 		<!--/select-->
 		<h1> How are you feeling today?</h1>
 		<?php
-			$emotions = array("Sad","Happy","Shitty","Horny");
-			foreach ($pdo->query("SELECT name FROM Mood") as $mood){
-				echo "<button class=\"btn btn-default\" type=\"submit\">$mood[0]</button>";
+			$temp = $pdo->query("SELECT name FROM Mood");
+			$emotions = $temp->fetchAll();
+			$length = count($emotions);
+			for ($x = 0; $x < $length; $x++){
+				echo("<button class=\"btn btn-default square\" type=\"submit\">");
+				echo($emotions[$x][0]);
+				echo("</button>");
 			}
 		?>
 	</body>
