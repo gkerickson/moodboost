@@ -40,36 +40,28 @@ CREATE TABLE Content
 (
 link varchar(255),
 rating DOUBLE(2,2),
-uname varchar(255),
-PRIMARY KEY (link,uname),
-FOREIGN KEY (uname) REFERENCES User(uname)
+PRIMARY KEY (link)
 );
 
 
 CREATE TABLE A_C
 (
 id varchar(255),
-uname varchar(255),
 link varchar(255),
-PRIMARY KEY (link,id,uname),
+PRIMARY KEY (link,id),
 FOREIGN KEY (link) REFERENCES Content(link),
 FOREIGN KEY (id) REFERENCES Atom(id)
 );
-
-ALTER TABLE A_C ADD CONSTRAINT FK_A_C_uname FOREIGN KEY (uname) REFERENCES Content (uname);
 
 
 CREATE TABLE M_C
 (
 name varchar(255),
-uname varchar(255),
 link varchar(255),
-PRIMARY KEY (link,name,uname),
+PRIMARY KEY (link,name),
 FOREIGN KEY (link) REFERENCES Content(link),
 FOREIGN KEY (name) REFERENCES Mood(name)
 );
-
-ALTER TABLE M_C ADD CONSTRAINT FK_M_C_uname FOREIGN KEY (uname) REFERENCES Content (uname);
 
 INSERT INTO Atom VALUES ("happy");
 INSERT INTO Atom VALUES ("sad");

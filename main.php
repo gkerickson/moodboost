@@ -12,7 +12,8 @@
         
         <?php
         $mood = $_GET["mood"];
-        $pdo->query("INSERT Data VALUES ($mood,"+time()+");");
+        $pdo->query("INSERT INTO Data (name,tme) VALUES ('$mood','".date("Y-m-d H:i:s")."');");
+        //echo("INSERT INTO Data (name,tme) VALUES ('");echo("$mood','"+time()+"');");
         ?>
 		<div>
 			<div id="top-main">
