@@ -63,6 +63,34 @@ FOREIGN KEY (link) REFERENCES Content(link),
 FOREIGN KEY (name) REFERENCES Mood(name)
 );
 
+
+CREATE TABLE Tags
+(
+tag BIGINT NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (tag)
+);
+
+
+CREATE TABLE Chats
+(
+taga BIGINT,
+tagb BIGINT,
+PRIMARY KEY (taga,tagb)
+);
+
+
+CREATE TABLE Msgs
+(
+pfrm BIGINT,
+pto BIGINT,
+msg varchar(255),
+tme DATETIME,
+PRIMARY KEY (pfrm,pto,msg,tme),
+FOREIGN KEY (pfrm) REFERENCES Tags(tag),
+FOREIGN KEY (pto) REFERENCES Tags(tag)
+);
+
+
 INSERT INTO Atom VALUES ("happy");
 INSERT INTO Atom VALUES ("sad");
 INSERT INTO Atom VALUES ("angry");
