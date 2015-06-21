@@ -1,6 +1,5 @@
 body {
-  background-color: #5328BF;background-image:url(http://bundledeal.net/wp-content/uploads/2014/04/color19.png);
-  background-size: contain;background-origin:border-box
+
 }
 
 button{
@@ -21,6 +20,13 @@ div{
 .sqr1{
 	width: 30vw;
 	height:30vw;
+}
+
+#front-page{
+	background-color: #5328BF;
+	background-image:url(http://bundledeal.net/wp-content/uploads/2014/04/color19.png);
+	background-size: contain;
+	background-origin:border-box;
 }
 
 #top-main {

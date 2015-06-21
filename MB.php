@@ -7,7 +7,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script language="JavaScript" src="MB.js"></script>
 	</head>
-	<body>
+	<body id="front-page">
 	   <?php require 'db.php';?>
 		<div id="buttons">
 			<?php
