@@ -1,6 +1,10 @@
 body {
+<<<<<<< HEAD
   background-color: #5328BF;background-image:url(http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
   background-size: contain;background-origin:border-box
+=======
+
+>>>>>>> 7a1c8019a6606aeeca5a32ae0812f1482626e8a5
 }
 
 button{
@@ -21,6 +25,13 @@ div{
 .sqr1{
 	width: 30vw;
 	height:30vw;
+}
+
+#front-page{
+	background-color: #5328BF;
+	background-image:url((http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
+	background-size: contain;
+	background-origin:border-box;
 }
 
 #top-main {
