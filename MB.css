@@ -18,7 +18,12 @@ div{
 	height:28vw;
 	margin:1vw;
 }
-
+#banner{
+	background-image:url(https://cottonbureau.com/img/products/241_gHUO_1200.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:left top;
+}
 #top-left .sqr1{
 	width:20vw;
 	height:20vw;
