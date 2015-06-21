@@ -6,11 +6,37 @@ button{
 div{
 	padding:0;
 	margin:0;
+	border:0	;
 }
 
 .btn {
   style: block;
   text-align: center;
+}
+
+.banner	{
+	position:fixed;
+	top:0px;
+	width:100vw;
+	background-color: black;
+	padding-bottom: 10px;
+	height:60px;
+	z-index: +1;
+}
+
+.banner h1{
+	position:relative;
+	left:-3vw;
+	text-align: center;
+	color:white;
+	font-size: auto;
+	height:100%;
+	vertical-align: middle;
+}
+
+.banner img {
+	height:80%;
+	float:left;
 }
 
 .sqr1{

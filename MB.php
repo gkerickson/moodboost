@@ -9,7 +9,13 @@
 		<script language="JavaScript" src="MB.js"></script>
 	</head>
 	<body id="front-page">
-	   <?php require 'db.php';?>
+		<?php require 'db.php';?>
+		<div class="banner">
+			<img src="https://openclipart.org/download/192852/thumbs-up-right.svg">
+			<h1>Project Mood Boost</h1>
+		</div>
+		<div class="banner" style="position:static"></div>
+
 		<div id="buttons">
 			<?php
 				$temp = $pdo->query("SELECT name,img FROM Mood");
