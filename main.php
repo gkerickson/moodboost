@@ -7,7 +7,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script language="JavaScript" src="main.js"></script>
 	</head>
-	<body>
+	<body id="main-page">
         <?php require 'db.php';?>
         
         <?php
@@ -48,7 +48,9 @@
 			<div id="bottom-main">
 				<textarea rows="16" cols="100" id="vieware" disabled="true"></textarea>
 				<form onsubmit="smt(); return false;">
+					<br>
 					Enter messages here:
+					<br>
 					<input type="text" name="msgtxt" value="Hi!" id="txtare">
 				</form>
 				</br>

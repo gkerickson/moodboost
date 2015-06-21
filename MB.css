@@ -12,6 +12,8 @@ div{
 h1{
 	padding:0;
 	margin:0;
+	color:#FFFFFF;
+	font-weight: bold;
 }
 
 .banner	{
@@ -52,6 +54,13 @@ h1{
 }
 
 #front-page{
+	background-color: #5328BF;
+	background-image:url(http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
+	background-size: contain;
+	background-origin:border-box;
+}
+
+#main-page{
 	background-color: #5328BF;
 	background-image:url(http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
 	background-size: contain;
@@ -119,10 +128,16 @@ h1{
 	margin:0px;
 	float:left;
 	text-align: center;
+	color:#FFFFFF;
+	font-weight: bold;
 }
 
 #buttons {  
   width: 90vw;
   margin-left: 4vw;
   margin-right: 4vw;
+}
+
+#txtare{
+	width:50vw;
 }
