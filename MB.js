@@ -1,14 +1,14 @@
 window.onload = function() {
-	var obj;
-	for(obj in document.getElementsByClassName("square")){
-		alert(obj);
-		obj.onclick =
-			 function() {
-			 	alert(obj.id);
-			 };
+	var objs = document.getElementsByClassName("sqr1");
+	var len = objs.length;
+	var x=0;
+	for(x=0;x<len;x++){
+		objs[x].onclick = sendTo(objs[x].id);
 	}
 };
 
-function sendTo(){
-	alert("KKK");
+function sendTo(txt){
+	return function(){
+		window.location.replace("main.php?mood="+txt);
+	};
 }
