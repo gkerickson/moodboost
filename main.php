@@ -9,18 +9,18 @@
 	</head>
 	<body>
 		<div>
-				<div>
-					<div class="top-main" id="top-left">
-						<button class="btn btn-default" type="submit">Do you need to talk?</button>
-					</div>
-					
-					<div class="top-main" id="top-right">
-						<p>test</p>
-					</div>
+			<div id="top-main">
+				<div id="top-left">
+					<button class="btn btn-default" type="submit">Do you need to talk?</button>
 				</div>
+				<div id="top-right">
+					<p>test</p>
+				</div>
+			
 				<div id="bottom-main">
 
 				</div>
+			</div>
 		</div>
 	</body>
 </html>
