@@ -69,7 +69,7 @@ h1{
 	padding-right:5vw;
 }
 
-#speak-button{
+.speak-button{
 	width:20vw;
 	height:20vw;
 	font: 25pt san-sarif;

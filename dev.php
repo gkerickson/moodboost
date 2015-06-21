@@ -4,8 +4,8 @@
 		<title>Mood-Boost</title>
 		<link href="bootstrap-3.3.5-dist/css/bootstrap.css" type="test/css" rel="stylesheet">
 		<link href="MB.css" type="text/css" rel="stylesheet" >
-		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
-		<!--script language="JavaScript" src="MB.js"></script-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script language="JavaScript" src="main.js"></script>
 	</head>
 	<body>
         <?php require 'db.php';?>
@@ -17,11 +17,12 @@
 		<div>
 			<div id="top-main">
 				<div id="top-left">
-					<button class="btn btn-default" id="speak-button" type="submit">WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?</button>
+					<button class="btn btn-default speak-button" id="initCht" type="submit" display="block">WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?</button>
+					<button class="btn btn-default speak-button" id="endCht" type="submit" display="none">END CONVERSTION</button>
 				</div>
 				<div id="top-middle">
 					<h1>PROJECT MOOD BOOST</h1>
-					<a href="/MB.php">
+					<a href="/M B.php">
 					<img src="https://openclipart.org/download/192852/thumbs-up-right.svg" id="main-img">
 					</a>
 				</div>
@@ -45,9 +46,13 @@
 				</div>
 			</div>
 			<div id="bottom-main">
-
+				<textarea rows="16" cols="100" id="vieware" disabled="true"></textarea>
+				<form onsubmit="smt(); return false;">
+					Enter messages here:
+					<input type="text" name="msgtxt" value="Hi!" id="txtare">
+				</form>
+				</br>
 			</div>
-			
 		</div>
 	</body>
 </html>
