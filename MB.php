@@ -9,18 +9,24 @@
 	</head>
 	<body>
 	   <?php require 'db.php';?>
-		<div>
+		<div id="buttons">
 			<?php
 				$temp = $pdo->query("SELECT name,img FROM Mood");
 				$emotions = $temp->fetchAll();
 				$length = count($emotions);
 				for ($x = 0; $x < $length; $x++){
 					echo("<button style=\"background: url(");
+
 					echo($emotions[$x][1]);
+
 					echo(") no-repeat; background-size:cover; font: 55pt san-sarif; color: #4D0000;\" id=\"");
+
 					echo($emotions[$x][0]);
-					echo("\" class=\"btn btn-default square\" type=\"submit\">");
+
+					echo("\" class=\"btn btn-default sqr1\" type=\"submit\">");
+
 					echo($emotions[$x][0]);
+
 					echo("</button>");
 				}
 			?>

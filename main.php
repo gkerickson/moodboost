@@ -10,12 +10,12 @@
 	<body>
 		<div>
 				<div>
-					<div class="top-main">
+					<div class="top-main" id="top-left">
 						<button class="btn btn-default" type="submit">Do you need to talk?</button>
 					</div>
-						
-					<div class="top-main">
-
+					
+					<div class="top-main" id="top-right">
+						<p>test</p>
 					</div>
 				</div>
 				<div id="bottom-main">
