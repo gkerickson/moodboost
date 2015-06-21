@@ -8,28 +8,46 @@
 		<script language="JavaScript" src="main.js"></script>
 	</head>
 	<body>
-        <?php require 'db.php';?>
-        
-        <?php
-	        $mood = $_GET["mood"];
-	        $pdo->query("INSERT INTO Data (name,tme) VALUES ('$mood','".date("Y-m-d H:i:s")."');");
-        ?>
+		<?php
+        require 'db.php';
+		?>
+
+		<?php
+        $mood = $_GET["mood"];
+        $pdo -> query("INSERT INTO Data (name,tme) VALUES ('$mood','" . date("Y-m-d H:i:s") . "');");
+		?>
 		<div>
 			<div id="top-main">
 				<div id="top-left">
-					<button class="btn btn-default sqr1" type="submit" id="initCht" display='block'>WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?</button>
-					<button class="btn btn-default sqr1" type="submit" id="endCht" display='none'>...END CONVERSATION</button>
+					<button class="btn btn-default sqr1" type="submit" id="initCht" display='block'>
+						WOULD YOU LIKE TO SPEAK TO ANOTHER PERSON?
+					</button>
+					<button class="btn btn-default sqr1" type="submit" id="endCht" display='none'>
+						...END CONVERSATION
+					</button>
 				</div>
 				<div id="top-right">
-					<h1>Watch Some Videos While You Wait</h1>					
+					<h1>Watch Some Videos While You Wait</h1>
 
 				</div>
-			</div>	
-			
-			<div id="bottom-main">
-
 			</div>
-			
+
+			<div id="bottom-main">
+				<textarea rows="16" cols="100" id="vieware" disabled="true">
+</textarea>				
+
+
+				<form onsubmit="smt(); return false;">
+					Enter messages here:
+					<input type="text" name="msgtxt" value="Hi!" id="txtare">
+				</form>
+
+				</br>
+				<!--button type="submit" id="smt">
+					Post
+				</button-->
+			</div>
+
 		</div>
 	</body>
 </html>
