@@ -8,6 +8,8 @@ h1 {
 }
 
 div {
+  
+  width: 90vw;
   margin-left: 4vw;
   margin-right: 4vw;
   padding: 0;
